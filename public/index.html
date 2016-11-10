@@ -1,0 +1,174 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omuma - Wedding Vendor Portal">
+        <title>Omuma - Merchant Register</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+                <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Omuma Registration">
+        <meta name="theme-color" content="#303F9F">
+
+                <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Omuma Registration">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+        <!-- Tile icon for Win8 -->
+        <meta name="msapplication-TileColor" content="#3372DF">
+        <meta name="msapplication-navbutton-color" content="#303F9F">
+
+                <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+                <!-- W3 CSS -->
+        <link rel="stylesheet" href="css/w3.css">
+
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- App Styling -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+
+        <!-- MUI -->
+        <link href="//cdn.muicss.com/mui-0.9.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+        <script src="//cdn.muicss.com/mui-0.9.3/js/mui.min.js"></script>
+
+
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        
+        <!--Main.css -->
+        <link rel="stylesheet" href="css/main.css">   
+
+
+
+
+    </head>
+
+    <body>
+        <main>
+            <nav>
+
+                <div class="row">
+                    <div id="logo" class="col m8 offset-m4" >
+                        <img src="images/logo.png" />
+                    </div>
+
+                </div>
+
+
+            </nav>
+
+            <section id="content" class="container">
+
+                <div class="row">
+                    <h3 class="col m8 offset-m3"> Registration Form </h3>
+                </div>
+
+                <div class="row">
+                    <h5> Business Details </h5>
+                </div>
+
+                <div class="row">
+                    <form class="s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="" id="business_name" type="text" class="validate"/>
+                        <label for="business_name">Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="business_email" type="text" class="validate">
+                            <label for="business_email">email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input value="" id="business_address" type="text" class="validate"/>
+                            <label for="business_address">address</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input value="" id="business_contact_number" type="text" class="validate"/>
+                            <label for="business_contact_number">Contact number</label>
+                        </div>
+                    </div>          
+
+                    <div class="row">
+                        <div class="input-field col s12 m3">
+                            <input value="" placeholder="optional" id="facebook" type="text" class="validate"/>
+                            <label for="facebook">facebook</label>
+                        </div>
+
+                        <div class="input-field col s12 m3">
+                            <input value="" placeholder="optional" id="twitter" type="text" class="validate"/>
+                            <label for="twitter">twitter</label>
+                        </div>
+
+                        <div class="input-field col s12 m3">
+                            <input value="" placeholder="optional" id="instagram" type="text" class="validate"/>
+                            <label for="instagram">instagram</label>
+                        </div>
+
+                        <div class="input-field col s12 m3">
+                            <input value="" placeholder="optional" id="snapchat" type="text" class="validate"/>
+                            <label for="snapchat">snapchat</label>
+                        </div>
+                    </div>                                    
+
+                <div class="row">
+                    <h5> Owner Details </h5>
+                </div>
+
+
+                   <div class="row">
+                        <div class="input-field col s12">
+                            <input value="" id="business_owners_name" type="text" class="validate"/>
+                            <label for="business_owners_name">owners name</label>
+                        </div>
+                    </div>
+ 
+
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">phone</i>
+
+                            <input value="" placeholder="optional" id="business_owners_number" type="text" class="validate"/>
+                            <label for="business_owners_number">phone number</label>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">email</i>
+
+                            <input value="" placeholder="for app launch updates" id="business_owners_number" type="text" class="validate"/>
+                            <label for="business_owners_email"> email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col m4 s4 offset-m5">
+                              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+
+</html>
