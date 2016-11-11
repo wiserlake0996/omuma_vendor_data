@@ -49,15 +49,28 @@
         <!--Main.css -->
         <link rel="stylesheet" href="css/main.css">   
 
-
-
-
     </head>
 
     <body>
         <main id ="entry">
 
         </main>
+
+        <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyApQpogZMqfPo25JDan21EZVz_aVGX5CWk",
+            authDomain: "omuma-68531.firebaseapp.com",
+            databaseURL: "https://omuma-68531.firebaseio.com",
+            storageBucket: "omuma-68531.appspot.com",
+            messagingSenderId: "192970256086"
+        };
+        firebase.initializeApp(config);
+          $(document).ready(function() {
+    $('select').material_select();
+  });
+        </script>
         <script src="js/bundle.js"></script>
 
     </body>
