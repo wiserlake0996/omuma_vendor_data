@@ -48,6 +48,8 @@ class RegistrationFormLV1 extends React.Component{
             updates['registration_level_1/vendors/' + newVendorKey + "/owners_number"] = this.refs.owners_number.value;
         }if(this.refs.vendor_type.value != ""){
             updates['registration_level_1/vendors/' + newVendorKey + "/vendor_type"] = this.refs.vendor_type.value;
+        }if(this.refs.additional_notes.value != ""){
+            updates['registration_level_1/vendors/' + newVendorKey + "/additional_information"] = this.refs.additional_information.value;
         }
 
         firebase.database().ref().update(updates).then(function(){
@@ -141,6 +143,13 @@ class RegistrationFormLV1 extends React.Component{
                             <label for="snapchat">snapchat</label>
                         </div>
                     </div> 
+
+                    <div className="row">
+                        <div className="input-field col s12">
+                            <textarea ref = "additional_information" id="additional_information" className="materialize-textarea"></textarea>
+                            <label for="additional_information">Additional information</label>
+                        </div>
+                    </div>
 
                 <div className="row">
                     <h5> Owner Details </h5>

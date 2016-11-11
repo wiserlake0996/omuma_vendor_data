@@ -26507,6 +26507,8 @@
 	                updates['registration_level_1/vendors/' + newVendorKey + "/owners_number"] = this.refs.owners_number.value;
 	            }if (this.refs.vendor_type.value != "") {
 	                updates['registration_level_1/vendors/' + newVendorKey + "/vendor_type"] = this.refs.vendor_type.value;
+	            }if (this.refs.additional_notes.value != "") {
+	                updates['registration_level_1/vendors/' + newVendorKey + "/additional_information"] = this.refs.additional_information.value;
 	            }
 
 	            firebase.database().ref().update(updates).then(function () {
@@ -26693,6 +26695,20 @@
 	                                    'label',
 	                                    { 'for': 'snapchat' },
 	                                    'snapchat'
+	                                )
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { className: 'row' },
+	                            React.createElement(
+	                                'div',
+	                                { className: 'input-field col s12' },
+	                                React.createElement('textarea', { ref: 'additional_information', id: 'additional_information', className: 'materialize-textarea' }),
+	                                React.createElement(
+	                                    'label',
+	                                    { 'for': 'additional_information' },
+	                                    'Additional information'
 	                                )
 	                            )
 	                        ),
